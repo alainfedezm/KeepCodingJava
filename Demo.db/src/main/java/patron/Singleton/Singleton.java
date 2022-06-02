@@ -1,4 +1,4 @@
-package patrones;
+package patron.Singleton;
 
 import java.util.Stack;
 

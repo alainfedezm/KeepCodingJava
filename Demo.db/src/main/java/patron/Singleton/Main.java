@@ -1,6 +1,6 @@
-package patrones;
+package patron.Singleton;
 
-public class Main {
+public class Main<T> {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
