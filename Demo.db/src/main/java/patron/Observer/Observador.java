@@ -1,10 +1,10 @@
 package patron.Observer;
 
-public class Observador implements IObserver {
+public class Observador<T> implements IObserver {
 
-	String nombre;
+	private T nombre;
 	
-	public Observador(String nombre) {
+	public Observador(T nombre) {
 		super();
 		this.nombre = nombre;
 	}

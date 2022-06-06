@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ErrorPage</title>
+<link rel="stylesheet" th:href="@{/taco.css}" />
+</head>
+<body>
+	<h1>Error, estamos trabajando en el fallo</h1>
+	<img th:src="@{/images/en_construccion.png}" />	
+	<div>
+		<span th:text="${msg}"></span>
+		<span th:text="${path}"></span>
+	</div>
+</body>
+</html>

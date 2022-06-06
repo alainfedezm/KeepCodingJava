@@ -1,6 +1,8 @@
 package patron.ejercicio;
 
-public class Coche {
+import patron.Observer.IObserver;
+
+public class Coche implements IObserver{
 	
 	private String marca;
 	private String modelo;
@@ -153,6 +155,11 @@ public class Coche {
 	public String toString() {
 		return "Coche [marca=" + marca + ", modelo=" + modelo + ", cm3=" + cm3 + ", color=" + color + ", puertas="
 				+ puertas + ", matricula=" + matricula + ", seguro=" + seguro + ", motor=" + motor + "]";
+	}
+
+	@Override
+	public void update(String tipoEvento) {
+		System.out.println(toString());
 	}
 	
 	
